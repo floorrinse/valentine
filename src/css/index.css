@@ -1,10 +1,9 @@
 body {
-  font-family: "DynaPuff", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffecf1;
-  color: #b37d8b;
-  max-width: 900px;
-  margin: 0 auto;
-}
+    font-family: "DynaPuff", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffecf1;
+    color: #b37d8b;
+    margin: 0 auto;
+  }
 
 #root {
   background-color: #ffb3bf;
@@ -12,25 +11,31 @@ body {
   border-radius: 20px;
   height: 100%;
   margin-top: 100px;
-}
-
-.header, .btn-div {
-  text-align: center;
-}
-
-.img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 20px;
+  /* width: fit-content; */
 }
 
 h1 {
-  margin-top: 50px;
+  margin-top: 5%;
+  font-size: 3em;
+  text-align: center;
 }
 
 p {
-  font-size: 22px;
+  font-size: 3em;
 }
+
+/* buttons */
+sl-button.btn::part(base) {
+  height: 100%;
+  /* --sl-input-height-medium: 100%; */
+  /* --sl-input-border-width: 5%; */
+  border-radius: 10px;
+  font-size: 2.5em;
+  font-family: "DynaPuff", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  padding: 1rem;
+  color: rgb(86, 80, 80)
+} 
 
 .dynapuff-font-style {
   font-family: "DynaPuff", serif;
@@ -41,9 +46,82 @@ p {
   "wdth" 100;
 };
 
+.header, .btn-div {
+  text-align: center;
+}
+
+.btn-div {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.btn {
+  margin: 10px;
+}
+
+ .img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 100%;
+  }
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+   
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+ }
+
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+  body {
+    /* max-width: 900px; */
+    margin: 0 auto;
+  }
+
+  #root {
+    background-color: #ffb3bf;
+    padding: 60px;
+    border-radius: 20px;
+    height: 100%;
+    margin-top: 100px;
+  }
+
+  .header, .btn-div {
+    text-align: center;
+  }
+
+  .img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  p {
+    font-size: 2.25em;
+  }
+
+ 
+}
 /* #no-btn {
   position: absolute;
   transition: 0.5s;
   height: 40px;
   width: 150px; */
 /* }
+
+}
