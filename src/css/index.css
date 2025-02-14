@@ -14,7 +14,7 @@ body {
   margin-top: 100px;
 }
 
-.header, .btn {
+.header, .btn-div {
   text-align: center;
 }
 
@@ -40,7 +40,6 @@ p {
   font-variation-settings:
   "wdth" 100;
 };
-
 
 /* #no-btn {
   position: absolute;
